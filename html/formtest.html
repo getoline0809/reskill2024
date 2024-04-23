@@ -1,12 +1,21 @@
-<form>
+<form action = "" method='post'>
 교육번호 :<br>
-<input type = 'text' placeholder = 'edu~'>
+edu: <input type = 'number' min = 1 max = 20  required>
 <br><br>
 PassWord :<br>
-<input type = 'password' placeholder = '비밀번호'>
+<input type = 'password' placeholder = '비밀번호' required>
 
 
 <ol>
+
+<li> 핸드폰 번호?</li>
+ <input type='tel' name='phone' pattern='[0-9]{3}-[0-9]{4}-[0-9]{4}' required>
+ <br>
+
+<li> 이메일 주소?</li>
+<input type='email' name='user_email' required>
+ <br>
+
 <li>취미가 무엇입니까?(복수선택)</li>
 
  <input type='checkbox'>운동<br>
@@ -37,8 +46,15 @@ PassWord :<br>
 </ol>
 
 <br>
+
+
+
+<button type ='submit'> 제출</button>
+</form>
+<br>
 ★★★★★<br>
 <input type="reset" value="절대 누르지 마시오" />
+
 
 
 </form>
